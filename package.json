@@ -1,0 +1,36 @@
+{
+  "name": "@vivaxy/wxml",
+  "version": "0.0.0",
+  "description": "wxml parser and stringify",
+  "main": "index.js",
+  "scripts": {
+    "test": "nyc ava && nyc report --reporter=html && nyc report --reporter=lcov > coverage.lcov",
+    "release:beta": "npm test && standard-version --prerelease beta && npm publish --tag beta && git push --follow-tags",
+    "release": "npm test && standard-version && npm publish && git push --follow-tags",
+    "precommit": "lint-staged"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vivaxy/WXML.git"
+  },
+  "author": "vivaxy <xyxuye2007@126.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vivaxy/WXML/issues"
+  },
+  "homepage": "https://github.com/vivaxy/WXML#readme",
+  "devDependencies": {
+    "ava": "^0.25.0",
+    "husky": "^0.14.3",
+    "lint-staged": "^7.2.0",
+    "nyc": "^12.0.2",
+    "prettier": "^1.14.0",
+    "standard-version": "^4.4.0"
+  },
+  "lint-staged": {
+    "**/**.{js,json,md}": [
+      "prettier --write",
+      "git add"
+    ]
+  }
+}
