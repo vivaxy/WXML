@@ -6,14 +6,25 @@
 const BaseNode = require('./BaseNode.js');
 
 module.exports = class TextNode extends BaseNode {
-  constructor({ type, text }) {
+  constructor(text) {
     const nodeTypes = require('../../enums/nodeTypes.js');
-    super({ type: nodeTypes.TEXT });
+    super(nodeTypes.TEXT);
     this.text = text;
+
+    // cache info
+    this.inMustache = false;
+  }
+
+  clean() {
+    delete this.inMustache;
   }
 
   dispose() {
     super.dispose();
     this.text = null;
+  }
+
+  toString() {
+    return this.text;
   }
 };

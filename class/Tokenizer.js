@@ -111,6 +111,14 @@ module.exports = class Tokenizer {
       return this._pushToken({ type: tokenTypes.MUSTACHE_END, value: '}}' });
     }
 
+    if (char === '=') {
+      return this._pushToken({ type: tokenTypes.EQUAL, value: '=' });
+    }
+
+    if (char === "'" || char === '"') {
+      return this._pushToken({ type: tokenTypes.QUOTE, value: char });
+    }
+
     if (
       char === '-' &&
       this._peekChar(1) === '-' &&

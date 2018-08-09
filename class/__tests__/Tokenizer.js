@@ -119,7 +119,23 @@ test('parse tag with attrs', (t) => {
   });
   t.deepEqual(getNextToken(tokenizer), {
     type: tokenTypes.TOKEN,
-    value: `a="1"`,
+    value: `a`,
+  });
+  t.deepEqual(getNextToken(tokenizer), {
+    type: tokenTypes.EQUAL,
+    value: `=`,
+  });
+  t.deepEqual(getNextToken(tokenizer), {
+    type: tokenTypes.QUOTE,
+    value: `"`,
+  });
+  t.deepEqual(getNextToken(tokenizer), {
+    type: tokenTypes.TOKEN,
+    value: `1`,
+  });
+  t.deepEqual(getNextToken(tokenizer), {
+    type: tokenTypes.QUOTE,
+    value: `"`,
   });
   t.deepEqual(getNextToken(tokenizer), {
     type: tokenTypes.WHITE_SPACE,

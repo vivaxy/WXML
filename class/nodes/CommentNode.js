@@ -6,14 +6,18 @@
 const BaseNode = require('./BaseNode.js');
 
 module.exports = class CommentNode extends BaseNode {
-  constructor({ type, comment }) {
+  constructor(comment) {
     const nodeTypes = require('../../enums/nodeTypes.js');
-    super({ type: nodeTypes.COMMENT });
+    super(nodeTypes.COMMENT);
     this.comment = comment;
   }
 
   dispose() {
     super.dispose();
     this.comment = null;
+  }
+
+  toString() {
+    return `<!-- ${this.comment} -->`;
   }
 };

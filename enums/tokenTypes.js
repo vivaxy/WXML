@@ -19,3 +19,6 @@ exports.WHITE_SPACE = 30; //
 exports.TOKEN = 40;
 
 exports.EOF = 50;
+
+exports.EQUAL = 60;
+exports.QUOTE = 61;
