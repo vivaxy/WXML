@@ -4,7 +4,7 @@
  */
 
 const test = require('ava');
-const Parser = require('../Parser.js');
+const Parser = require('../Parser/index.js');
 
 test.skip('parse attrs without space', (t) => {
   const parser = new Parser();
