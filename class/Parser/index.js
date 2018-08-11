@@ -4,7 +4,7 @@
  */
 
 const Tokenizer = require('../Tokenizer.js');
-const classFactories = [
+const mixins = [
   require('./mixins/TokenParser.js'),
   require('./mixins/TagStartParser.js'),
   require('./mixins/TagEndParser.js'),
@@ -61,6 +61,4 @@ class Parser {
   }
 }
 
-module.exports = classFactories.reduce((prevClass, factory) => {
-  return factory(prevClass);
-}, Parser);
+module.exports = mixins.reduce((C, m) => m(C), Parser);
