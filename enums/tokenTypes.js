@@ -3,22 +3,22 @@
  * @author vivaxy
  */
 
-exports.TAG_START = 0; // <
-exports.TAG_END = 1; // >
-exports.TAG_CLOSE_START = 2; // </
-exports.TAG_SELF_CLOSE = 4; // />
+exports.OPEN_TAG_START = 'OPEN_TAG_START'; // <
+exports.TAG_END = 'TAG_END'; // >
+exports.CLOSE_TAG_START = 'CLOSE_TAG_START'; // </
+exports.OPEN_TAG_SELF_CLOSE = 'OPEN_TAG_SELF_CLOSE'; // />
 
-exports.MUSTACHE_START = 10; // {{
-exports.MUSTACHE_END = 11; // }}
+exports.MUSTACHE_START = 'MUSTACHE_START'; // {{
+exports.MUSTACHE_END = 'MUSTACHE_END'; // }}
 
-exports.COMMENT_START = 20; // <!--
-exports.COMMENT_END = 21; // -->
+exports.COMMENT_START = 'COMMENT_START'; // <!--
+exports.COMMENT_END = 'COMMENT_END'; // -->
 
-exports.WHITE_SPACE = 30; //
+exports.WHITE_SPACE = 'WHITE_SPACE'; //
 
-exports.TOKEN = 40;
+exports.NAME = 'NAME';
 
-exports.EOF = 50;
+exports.EQUAL = 'EQUAL';
+exports.QUOTE = 'QUOTE';
 
-exports.EQUAL = 60;
-exports.QUOTE = 61;
+exports.EOF = 'EOF';

@@ -1,0 +1,38 @@
+[
+  {
+    "type": "OPEN_TAG_START",
+    "value": "<"
+  },
+  {
+    "type": "NAME",
+    "value": "tag"
+  },
+  {
+    "type": "TAG_END",
+    "value": ">"
+  },
+  {
+    "type": "OPEN_TAG_START",
+    "value": "<"
+  },
+  {
+    "type": "NAME",
+    "value": "child"
+  },
+  {
+    "type": "OPEN_TAG_SELF_CLOSE",
+    "value": "/>"
+  },
+  {
+    "type": "CLOSE_TAG_START",
+    "value": "</"
+  },
+  {
+    "type": "NAME",
+    "value": "tag"
+  },
+  {
+    "type": "TAG_END",
+    "value": ">"
+  }
+]

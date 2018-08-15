@@ -4,7 +4,6 @@
  */
 
 const BaseNode = require('./BaseNode.js');
-const ENCS = require('../../enums/elementNodeComposingStates.js');
 
 module.exports = class ElementNode extends BaseNode {
   constructor(tagName, childNodes = []) {
@@ -16,7 +15,7 @@ module.exports = class ElementNode extends BaseNode {
     this.isSelfClosing = false;
 
     // cache info
-    this.composingState = ENCS.NOT_OPEN;
+    // this.composingState = ENCS.NOT_OPEN;
     this.composingAttrName = null;
   }
 
