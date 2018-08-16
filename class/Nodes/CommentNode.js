@@ -20,4 +20,11 @@ module.exports = class CommentNode extends BaseNode {
   toString() {
     return `<!-- ${this.comment} -->`;
   }
+
+  toJSON() {
+    return {
+      type: this.type,
+      comment: this.comment,
+    };
+  }
 };

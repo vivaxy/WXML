@@ -10,13 +10,6 @@ module.exports = class TextNode extends BaseNode {
     const nodeTypes = require('../../enums/nodeTypes.js');
     super(nodeTypes.TEXT);
     this.text = text;
-
-    // cache info
-    this.inMustache = false;
-  }
-
-  clean() {
-    delete this.inMustache;
   }
 
   dispose() {
@@ -26,5 +19,12 @@ module.exports = class TextNode extends BaseNode {
 
   toString() {
     return this.text;
+  }
+
+  toJSON() {
+    return {
+      type: this.type,
+      text: this.text,
+    };
   }
 };

@@ -1,0 +1,13 @@
+{
+  "isRoot": true,
+  "childNodes": [
+    {
+      "type": "ELEMENT",
+      "tagName": "tag",
+      "attrs": {
+        "attr1": "value1",
+        "attr2": "value1"
+      }
+    }
+  ]
+}

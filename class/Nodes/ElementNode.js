@@ -6,22 +6,13 @@
 const BaseNode = require('./BaseNode.js');
 
 module.exports = class ElementNode extends BaseNode {
-  constructor(tagName, childNodes = []) {
+  constructor() {
     const nodeTypes = require('../../enums/nodeTypes.js');
     super(nodeTypes.ELEMENT);
-    this.tagName = tagName;
-    this.childNodes = childNodes;
+    this.tagName = null;
+    this.childNodes = [];
     this.attrs = {};
     this.isSelfClosing = false;
-
-    // cache info
-    // this.composingState = ENCS.NOT_OPEN;
-    this.composingAttrName = null;
-  }
-
-  clean() {
-    delete this.composingState;
-    delete this.composingAttrName;
   }
 
   dispose() {
@@ -62,5 +53,24 @@ module.exports = class ElementNode extends BaseNode {
     }
 
     return `<${this.tagName} ${attrsString}></${this.tagName}>`;
+  }
+
+  toJSON() {
+    const ret = {
+      type: this.type,
+      tagName: this.tagName,
+    };
+    if (this.childNodes.length) {
+      ret.childNodes = this.childNodes.map((childNode) => {
+        return childNode.toJSON();
+      });
+    }
+    if (Object.keys(this.attrs).length) {
+      ret.attrs = this.attrs;
+    }
+    if (this.isSelfClosing) {
+      ret.isSelfClosing = true;
+    }
+    return ret;
   }
 };

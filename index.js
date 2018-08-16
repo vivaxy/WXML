@@ -3,11 +3,8 @@
  * @author vivaxy
  */
 
-const Parser = require('./lib/parser.js');
+const parse = require('./lib/parse.js');
 
-exports.parse = (wxml) => {
-  const parser = new Parser();
-  return parser.parse(wxml);
-};
+exports.parse = parse;
 
 exports.serialize = (root) => {};
