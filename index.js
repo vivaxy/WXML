@@ -7,4 +7,6 @@ const parse = require('./lib/parse.js');
 
 exports.parse = parse;
 
-exports.serialize = (root) => {};
+exports.serialize = (root) => {
+  return root.toString();
+};
