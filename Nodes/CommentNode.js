@@ -4,10 +4,10 @@
  */
 
 const BaseNode = require('./BaseNode.js');
+const nodeTypes = require('../enums/nodeTypes.js');
 
 module.exports = class CommentNode extends BaseNode {
   constructor(comment) {
-    const nodeTypes = require('../../enums/nodeTypes.js');
     super(nodeTypes.COMMENT);
     this.comment = comment;
   }
