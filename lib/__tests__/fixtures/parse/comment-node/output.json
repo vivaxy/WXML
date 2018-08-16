@@ -1,0 +1,23 @@
+{
+  "isRoot": true,
+  "childNodes": [
+    {
+      "type": "COMMENT",
+      "comment": "<this is=\"a comment\""
+    },
+    {
+      "type": "ELEMENT",
+      "tagName": "text",
+      "childNodes": [
+        {
+          "type": "TEXT",
+          "text": "test"
+        }
+      ]
+    },
+    {
+      "type": "TEXT",
+      "text": "\n"
+    }
+  ]
+}
