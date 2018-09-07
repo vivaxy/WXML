@@ -20,5 +20,3 @@ exports.NAME = 'NAME';
 
 exports.EQUAL = 'EQUAL';
 exports.QUOTE = 'QUOTE';
-
-exports.EOF = 'EOF';

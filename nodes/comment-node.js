@@ -3,8 +3,8 @@
  * @author vivaxy
  */
 
-const BaseNode = require('./BaseNode.js');
-const nodeTypes = require('../enums/nodeTypes.js');
+const BaseNode = require('./base-node.js');
+const nodeTypes = require('../enums/node-types.js');
 
 module.exports = class CommentNode extends BaseNode {
   constructor(comment) {

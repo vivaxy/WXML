@@ -3,23 +3,23 @@
  * @author vivaxy
  */
 
-const BaseNode = require('./BaseNode.js');
-const nodeTypes = require('../enums/nodeTypes.js');
+const BaseNode = require('./base-node.js');
+const nodeTypes = require('../enums/node-types.js');
 
 module.exports = class ElementNode extends BaseNode {
   constructor() {
     super(nodeTypes.ELEMENT);
-    this.tagName = null;
-    this.childNodes = [];
+    this.tagName = '';
     this.attrs = {};
+    this.childNodes = [];
     this.isSelfClosing = false;
   }
 
   dispose() {
     super.dispose();
     this.tagName = null;
-    this.childNodes = null;
     this.attrs = null;
+    this.childNodes = null;
     this.isSelfClosing = null;
   }
 
@@ -60,13 +60,13 @@ module.exports = class ElementNode extends BaseNode {
       type: this.type,
       tagName: this.tagName,
     };
+    if (Object.keys(this.attrs).length) {
+      ret.attrs = this.attrs;
+    }
     if (this.childNodes.length) {
       ret.childNodes = this.childNodes.map((childNode) => {
         return childNode.toJSON();
       });
-    }
-    if (Object.keys(this.attrs).length) {
-      ret.attrs = this.attrs;
     }
     if (this.isSelfClosing) {
       ret.isSelfClosing = true;

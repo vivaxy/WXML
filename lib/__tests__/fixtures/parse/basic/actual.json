@@ -1,0 +1,101 @@
+{
+  "isRoot": true,
+  "childNodes": [
+    {
+      "type": "ELEMENT",
+      "tagName": "view",
+      "attrs": {
+        "class": "view-class {{someClass}}"
+      },
+      "childNodes": [
+        {
+          "type": "TEXT",
+          "text": "\n  "
+        },
+        {
+          "type": "ELEMENT",
+          "tagName": "text",
+          "childNodes": [
+            {
+              "type": "TEXT",
+              "text": "{{a <= b ? c : d}}"
+            }
+          ]
+        },
+        {
+          "type": "ELEMENT",
+          "tagName": "text",
+          "childNodes": [
+            {
+              "type": "TEXT",
+              "text": "{{a <= b ? c : d}}"
+            }
+          ]
+        },
+        {
+          "type": "TEXT",
+          "text": "\n  "
+        },
+        {
+          "type": "ELEMENT",
+          "tagName": "include",
+          "attrs": {
+            "src": "../some-template.wxml"
+          }
+        },
+        {
+          "type": "TEXT",
+          "text": ">\n"
+        }
+      ]
+    },
+    {
+      "type": "ELEMENT",
+      "tagName": "view",
+      "attrs": {
+        "class": "view-class {{someClass}}"
+      },
+      "childNodes": [
+        {
+          "type": "TEXT",
+          "text": "\n  "
+        },
+        {
+          "type": "ELEMENT",
+          "tagName": "text",
+          "childNodes": [
+            {
+              "type": "TEXT",
+              "text": "{{a <= b ? c : d}}"
+            }
+          ]
+        },
+        {
+          "type": "ELEMENT",
+          "tagName": "text",
+          "childNodes": [
+            {
+              "type": "TEXT",
+              "text": "{{a <= b ? c : d}}"
+            }
+          ]
+        },
+        {
+          "type": "TEXT",
+          "text": "\n  "
+        },
+        {
+          "type": "ELEMENT",
+          "tagName": "include",
+          "attrs": {
+            "src": "../some-template.wxml"
+          }
+        },
+        {
+          "type": "TEXT",
+          "text": ">\n"
+        }
+      ]
+    }
+  ]
+}
