@@ -3,7 +3,7 @@
  * @author vivaxy
  */
 
-exports.ELEMENT = 'ELEMENT';
-exports.TEXT = 'TEXT';
-exports.CDATA_SECTION = 'CDATA_SECTION';
-exports.COMMENT = 'COMMENT';
+exports.ELEMENT = 'element';
+exports.TEXT = 'text';
+exports.CDATA_SECTION = 'cdata_section';
+exports.COMMENT = 'comment';
