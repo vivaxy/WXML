@@ -4,9 +4,10 @@
   "description": "wxml parser and stringify",
   "main": "index.js",
   "scripts": {
-    "test": "nyc ava && nyc report --reporter=html && nyc report --reporter=lcov > coverage.lcov",
-    "release:beta": "npm test && standard-version --prerelease beta && npm publish --tag beta && git push --follow-tags",
-    "release": "npm test && standard-version && npm publish && git push --follow-tags",
+    "test": "ava",
+    "coverage": "nyc npm run test && nyc report --reporter=html && nyc report --reporter=lcov > coverage.lcov",
+    "release:beta": "npm run coverage && standard-version --prerelease beta && npm publish --tag beta && git push --follow-tags",
+    "release": "npm run coverage && standard-version && npm publish && git push --follow-tags",
     "precommit": "lint-staged"
   },
   "repository": {

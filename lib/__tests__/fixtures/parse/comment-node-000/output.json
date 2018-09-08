@@ -2,21 +2,25 @@
   "isRoot": true,
   "childNodes": [
     {
-      "type": "COMMENT",
-      "comment": "<this is=\"a comment\""
+      "type": "comment",
+      "comment": " <this is=\"a comment\" "
     },
     {
-      "type": "ELEMENT",
+      "type": "text",
+      "text": "\n"
+    },
+    {
+      "type": "element",
       "tagName": "text",
       "childNodes": [
         {
-          "type": "TEXT",
+          "type": "text",
           "text": "test"
         }
       ]
     },
     {
-      "type": "TEXT",
+      "type": "text",
       "text": "\n"
     }
   ]

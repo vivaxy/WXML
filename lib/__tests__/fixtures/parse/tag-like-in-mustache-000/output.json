@@ -2,40 +2,40 @@
   "isRoot": true,
   "childNodes": [
     {
-      "type": "ELEMENT",
+      "type": "element",
       "tagName": "view",
       "attrs": {
         "class": "view-class {{someClass}}"
       },
       "childNodes": [
         {
-          "type": "TEXT",
+          "type": "text",
           "text": "\n  "
         },
         {
-          "type": "ELEMENT",
+          "type": "element",
           "tagName": "text",
           "childNodes": [
             {
-              "type": "TEXT",
-              "text": "{{a <= b ? c : d}}"
+              "type": "text",
+              "text": "{{a<=b?c:d}}"
             }
           ]
         },
         {
-          "type": "TEXT",
+          "type": "text",
           "text": "\n  "
         },
         {
-          "type": "ELEMENT",
+          "type": "element",
           "tagName": "include",
           "attrs": {
             "src": "../some-template.wxml"
           },
-          "isSelfClosing": true
+          "selfClosing": true
         },
         {
-          "type": "TEXT",
+          "type": "text",
           "text": "\n"
         }
       ]

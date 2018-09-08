@@ -1,4 +1,4 @@
 <view class="view-class {{someClass}}">
-  <text>{{a <= b ? c : d}}</text>
+  <text>{{a<=b?c:d}}</text>
   <include src="../some-template.wxml" />
 </view>

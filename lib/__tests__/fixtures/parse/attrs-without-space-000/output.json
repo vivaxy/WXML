@@ -2,7 +2,7 @@
   "isRoot": true,
   "childNodes": [
     {
-      "type": "ELEMENT",
+      "type": "element",
       "tagName": "tag",
       "attrs": {
         "attr1": "value1",

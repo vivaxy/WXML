@@ -2,8 +2,8 @@
   "isRoot": true,
   "childNodes": [
     {
-      "type": "TEXT",
-      "text": "text content"
+      "type": "element",
+      "tagName": "tag"
     }
   ]
 }

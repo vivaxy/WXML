@@ -12,7 +12,7 @@ module.exports = class ElementNode extends BaseNode {
     this.tagName = '';
     this.attrs = {};
     this.childNodes = [];
-    this.isSelfClosing = false;
+    this.selfClosing = false;
   }
 
   dispose() {
@@ -20,7 +20,7 @@ module.exports = class ElementNode extends BaseNode {
     this.tagName = null;
     this.attrs = null;
     this.childNodes = null;
-    this.isSelfClosing = null;
+    this.selfClosing = null;
   }
 
   traverse(visitor) {
@@ -35,7 +35,7 @@ module.exports = class ElementNode extends BaseNode {
       return `${acc} ${name}="${value.replace(/"/g, '"')}"`;
     }, '');
 
-    if (this.isSelfClosing) {
+    if (this.selfClosing) {
       return `<${this.tagName} ${attrsString} />`;
     }
 
@@ -68,8 +68,8 @@ module.exports = class ElementNode extends BaseNode {
         return childNode.toJSON();
       });
     }
-    if (this.isSelfClosing) {
-      ret.isSelfClosing = true;
+    if (this.selfClosing) {
+      ret.selfClosing = true;
     }
     return ret;
   }
