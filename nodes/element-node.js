@@ -4,7 +4,7 @@
  */
 
 const BaseNode = require('./base-node.js');
-const nodeTypes = require('../enums/node-types.js');
+const nodeTypes = require('../types/node-types.js');
 
 module.exports = class ElementNode extends BaseNode {
   constructor() {
