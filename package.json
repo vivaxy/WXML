@@ -1,6 +1,6 @@
 {
   "name": "@vivaxy/wxml",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "wxml parser and stringify",
   "main": "index.js",
   "scripts": {
