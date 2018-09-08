@@ -1,44 +1,41 @@
-{
-  "isRoot": true,
-  "childNodes": [
-    {
-      "type": "element",
-      "tagName": "view",
-      "attrs": {
-        "class": "view-class {{someClass}}"
+[
+  {
+    "type": "element",
+    "tagName": "view",
+    "attrs": {
+      "class": "view-class {{someClass}}"
+    },
+    "childNodes": [
+      {
+        "type": "text",
+        "text": "\n  "
       },
-      "childNodes": [
-        {
-          "type": "text",
-          "text": "\n  "
+      {
+        "type": "element",
+        "tagName": "text",
+        "childNodes": [
+          {
+            "type": "text",
+            "text": "{{a <= b ? c : d}}"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "text": "\n  "
+      },
+      {
+        "type": "element",
+        "tagName": "include",
+        "attrs": {
+          "src": "../some-template.wxml"
         },
-        {
-          "type": "element",
-          "tagName": "text",
-          "childNodes": [
-            {
-              "type": "text",
-              "text": "{{a <= b ? c : d}}"
-            }
-          ]
-        },
-        {
-          "type": "text",
-          "text": "\n  "
-        },
-        {
-          "type": "element",
-          "tagName": "include",
-          "attrs": {
-            "src": "../some-template.wxml"
-          },
-          "selfClosing": true
-        },
-        {
-          "type": "text",
-          "text": "\n"
-        }
-      ]
-    }
-  ]
-}
+        "selfClosing": true
+      },
+      {
+        "type": "text",
+        "text": "\n"
+      }
+    ]
+  }
+]

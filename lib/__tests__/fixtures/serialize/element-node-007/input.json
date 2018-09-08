@@ -1,0 +1,11 @@
+[
+  {
+    "type": "element",
+    "tagName": "tag",
+    "attrs": {
+      "name": "true",
+      "name1": "value"
+    },
+    "selfClosing": true
+  }
+]

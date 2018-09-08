@@ -1,0 +1,12 @@
+[
+  {
+    "type": "element",
+    "tagName": "tag",
+    "childNodes": [
+      {
+        "type": "text",
+        "text": "\n"
+      }
+    ]
+  }
+]

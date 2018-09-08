@@ -9,22 +9,7 @@ module.exports = class BaseNode {
     this.parentNode = null;
   }
 
-  traverse(visitor) {
-    visitor(this);
-  }
-
-  dispose() {
-    this.type = null;
-    this.parentNode = null;
-  }
-
-  toString() {
-    return '';
-  }
-
   toJSON() {
-    return {
-      type: this.type,
-    };
+    throw new Error('To be implemented');
   }
 };

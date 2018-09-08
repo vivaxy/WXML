@@ -3,7 +3,8 @@
     "type": "element",
     "tagName": "tag",
     "attrs": {
-      "name": "'"
+      "name": "true",
+      "name1": "value"
     }
   }
 ]

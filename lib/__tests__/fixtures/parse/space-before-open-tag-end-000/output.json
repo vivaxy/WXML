@@ -1,12 +1,9 @@
-{
-  "isRoot": true,
-  "childNodes": [
-    {
-      "type": "element",
-      "tagName": "tag",
-      "attrs": {
-        "name": true
-      }
+[
+  {
+    "type": "element",
+    "tagName": "tag",
+    "attrs": {
+      "name": true
     }
-  ]
-}
+  }
+]

@@ -12,15 +12,6 @@ module.exports = class CommentNode extends BaseNode {
     this.comment = comment;
   }
 
-  dispose() {
-    super.dispose();
-    this.comment = null;
-  }
-
-  toString() {
-    return `<!-- ${this.comment} -->`;
-  }
-
   toJSON() {
     return {
       type: this.type,

@@ -1,27 +1,24 @@
-{
-  "isRoot": true,
-  "childNodes": [
-    {
-      "type": "comment",
-      "comment": " <this is=\"a comment\" "
-    },
-    {
-      "type": "text",
-      "text": "\n"
-    },
-    {
-      "type": "element",
-      "tagName": "text",
-      "childNodes": [
-        {
-          "type": "text",
-          "text": "test"
-        }
-      ]
-    },
-    {
-      "type": "text",
-      "text": "\n"
-    }
-  ]
-}
+[
+  {
+    "type": "comment",
+    "comment": " <this is=\"a comment\" "
+  },
+  {
+    "type": "text",
+    "text": "\n"
+  },
+  {
+    "type": "element",
+    "tagName": "text",
+    "childNodes": [
+      {
+        "type": "text",
+        "text": "test"
+      }
+    ]
+  },
+  {
+    "type": "text",
+    "text": "\n"
+  }
+]

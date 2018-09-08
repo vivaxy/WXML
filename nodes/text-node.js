@@ -12,15 +12,6 @@ module.exports = class TextNode extends BaseNode {
     this.text = text;
   }
 
-  dispose() {
-    super.dispose();
-    this.text = null;
-  }
-
-  toString() {
-    return this.text;
-  }
-
   toJSON() {
     return {
       type: this.type,
