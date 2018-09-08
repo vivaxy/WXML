@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.2.0"></a>
+# [0.2.0](https://github.com/vivaxy/WXML/compare/v0.1.2...v0.2.0) (2018-09-08)
+
+
+### Features
+
+* **parse:** :sparkles:Refactor output data structure ([2390d16](https://github.com/vivaxy/WXML/commit/2390d16))
+
+
+
 <a name="0.1.2"></a>
 ## [0.1.2](https://github.com/vivaxy/WXML/compare/v0.1.1...v0.1.2) (2018-09-08)
 
