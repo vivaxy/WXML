@@ -1,0 +1,10 @@
+{
+  "isRoot": true,
+  "childNodes": [
+    {
+      "type": "element",
+      "tagName": "tag",
+      "selfClosing": true
+    }
+  ]
+}
