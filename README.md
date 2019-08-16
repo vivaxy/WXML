@@ -18,7 +18,7 @@ WXML parser and serializer.
 ```js
 const wxml = require('@vivaxy/wxml');
 const parsed = wxml.parse('<view></view>');
-wxml.traverse(parsed, function visitor(node) {
+wxml.traverse(parsed, function visitor(node, parent) {
   console.log(node);
 });
 const serialized = wxml.serialize(parsed);
