@@ -60,5 +60,10 @@
     "hooks": {
       "pre-commit": "lint-staged"
     }
+  },
+  "ava": {
+    "helpers": [
+      "**/helpers/**/*"
+    ]
   }
 }
