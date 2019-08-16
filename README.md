@@ -9,6 +9,21 @@ WXML parser and serializer.
 [![Standard Version][standard-version-image]][standard-version-url]
 [![Codecov][codecov-image]][codecov-url]
 
+# Install
+
+`npm i @vivaxy/wxml --save` or `yarn add @vivaxy/wxml`
+
+# Usage
+
+```js
+const wxml = require('@vivaxy/wxml');
+const parsed = wxml.parse('<view></view>');
+wxml.traverse(parsed, function visitor(node) {
+  console.log(node);
+});
+const serialized = wxml.serialize(parsed);
+```
+
 [travis-image]: https://img.shields.io/travis/vivaxy/WXML.svg?style=flat-square
 [travis-url]: https://travis-ci.org/vivaxy/WXML
 [npm-version-image]: https://img.shields.io/npm/v/@vivaxy/wxml.svg?style=flat-square
