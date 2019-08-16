@@ -1,6 +1,6 @@
 {
   "name": "@vivaxy/wxml",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "wxml parser and serializer",
   "keywords": [
     "wxml",
