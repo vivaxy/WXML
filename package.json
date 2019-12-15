@@ -61,6 +61,8 @@
     }
   },
   "jest": {
-    "testRegex": "/__tests__/.*\\.test\\.[jt]sx?$"
+    "testEnvironment": "node",
+    "testRegex": "/__tests__/.*\\.test\\.[jt]sx?$",
+    "collectCoverageFrom": ["lib/**/*.js","nodes/**/*.js", "types/**/*.js", "!lib/**/__tests__/**/*.js"]
   }
 }
