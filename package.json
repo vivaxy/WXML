@@ -1,6 +1,6 @@
 {
   "name": "@vivaxy/wxml",
-  "version": "0.2.3",
+  "version": "1.0.0",
   "description": "wxml parser and serializer",
   "keywords": [
     "wxml",
@@ -63,6 +63,11 @@
   "jest": {
     "testEnvironment": "node",
     "testRegex": "/__tests__/.*\\.test\\.[jt]sx?$",
-    "collectCoverageFrom": ["lib/**/*.js","nodes/**/*.js", "types/**/*.js", "!lib/**/__tests__/**/*.js"]
+    "collectCoverageFrom": [
+      "lib/**/*.js",
+      "nodes/**/*.js",
+      "types/**/*.js",
+      "!lib/**/__tests__/**/*.js"
+    ]
   }
 }
