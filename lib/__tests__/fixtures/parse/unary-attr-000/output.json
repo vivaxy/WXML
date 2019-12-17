@@ -1,0 +1,13 @@
+[
+  {
+    "type": "element",
+    "tagName": "view",
+    "attrs": {
+      "hidden": true
+    }
+  },
+  {
+    "type": "text",
+    "text": "\n"
+  }
+]
