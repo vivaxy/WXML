@@ -3,7 +3,8 @@
     "type": "element",
     "tagName": "view",
     "attrs": {
-      "hidden": true
+      "hidden": true,
+      "disabled": true
     }
   },
   {

@@ -1,0 +1,13 @@
+[
+  {
+    "type": "element",
+    "tagName": "view",
+    "attrs": {
+      "id": ">"
+    }
+  },
+  {
+    "type": "text",
+    "text": "\n"
+  }
+]
