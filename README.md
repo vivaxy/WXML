@@ -1,6 +1,6 @@
 # WXML
 
-WXML parser and serializer.
+🌇WXML parser and serializer.
 
 [![Build Status][travis-image]][travis-url]
 [![NPM Version][npm-version-image]][npm-url]
@@ -11,7 +11,7 @@ WXML parser and serializer.
 
 # Install
 
-`npm i @vivaxy/wxml --save` or `yarn add @vivaxy/wxml`
+`yarn add @vivaxy/wxml` or `npm i @vivaxy/wxml --save`
 
 # Usage
 
@@ -23,6 +23,14 @@ wxml.traverse(parsed, function visitor(node, parent) {
 });
 const serialized = wxml.serialize(parsed);
 ```
+
+# API
+
+## `parse: (input: string) => AST`
+
+## `traverse: (ast: AST, visitor: (node: ASTNode, parent: ASTNode) => void) => void`
+
+## `serialize: (ast: AST) => string`
 
 [travis-image]: https://img.shields.io/travis/vivaxy/WXML.svg?style=flat-square
 [travis-url]: https://travis-ci.org/vivaxy/WXML

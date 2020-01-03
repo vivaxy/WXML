@@ -2,7 +2,6 @@
  * @since 20180808 10:52
  * @author vivaxy
  */
-
 const parse = require('./lib/parse.js');
 const serialize = require('./lib/serialize.js');
 const traverse = require('./lib/traverse.js');
