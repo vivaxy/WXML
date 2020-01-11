@@ -26,11 +26,17 @@ const serialized = wxml.serialize(parsed);
 
 # API
 
-## `parse: (input: string) => AST`
+## `parse`
 
-## `traverse: (ast: AST, visitor: (node: ASTNode, parent: ASTNode) => void) => void`
+`(input: string) => AST`
 
-## `serialize: (ast: AST) => string`
+## `traverse`
+
+`(ast: AST, visitor: (node: ASTNode, parent: ASTNode) => void) => void`
+
+## `serialize`
+
+`(ast: AST) => string`
 
 [travis-image]: https://img.shields.io/travis/vivaxy/WXML.svg?style=flat-square
 [travis-url]: https://travis-ci.org/vivaxy/WXML
