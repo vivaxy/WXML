@@ -16,7 +16,7 @@
 # Usage
 
 ```js
-const wxml = require('@vivaxy/wxml');
+import * as wxml from '@vivaxy/wxml';
 const parsed = wxml.parse('<view></view>');
 wxml.traverse(parsed, function visitor(node, parent) {
   console.log(node);
@@ -32,11 +32,11 @@ const serialized = wxml.serialize(parsed);
 
 ## `traverse`
 
-`(ast: AST, visitor: (node: ASTNode, parent: ASTNode) => void) => void`
+`(node: Node, visitor: (node: Node, parent: Node) => void) => void`
 
 ## `serialize`
 
-`(ast: AST) => string`
+`(node: Node) => string`
 
 [travis-image]: https://img.shields.io/travis/vivaxy/WXML.svg?style=flat-square
 [travis-url]: https://travis-ci.org/vivaxy/WXML
