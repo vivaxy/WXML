@@ -24,8 +24,9 @@
     "traverser",
     "serializer"
   ],
-  "main": "index.js",
+  "main": "lib/index.js",
   "scripts": {
+    "build": "tsc",
     "test": "jest",
     "coverage": "jest --collect-coverage",
     "release:beta": "npm run coverage && standard-version --prerelease beta && npm publish --tag beta && git push --follow-tags",
@@ -42,12 +43,16 @@
   },
   "homepage": "https://github.com/vivaxy/WXML#readme",
   "devDependencies": {
+    "@types/fs-extra": "^8.0.1",
+    "@types/jest": "^24.9.0",
     "fs-extra": "^8.1.0",
     "husky": "^3.0.3",
     "jest": "^24.9.0",
     "lint-staged": "^9.2.1",
     "prettier": "^1.18.2",
-    "standard-version": "^7.0.0"
+    "standard-version": "^7.0.0",
+    "ts-jest": "^24.3.0",
+    "typescript": "^3.7.5"
   },
   "lint-staged": {
     "**/**.{js,json,md}": [
@@ -62,12 +67,13 @@
   },
   "jest": {
     "testEnvironment": "node",
-    "testRegex": "/__tests__/.*\\.test\\.[jt]sx?$",
+    "preset": "ts-jest",
+    "testMatch": [
+      "<rootDir>/src/**/__tests__/**/*.test.ts?(x)"
+    ],
     "collectCoverageFrom": [
-      "lib/**/*.js",
-      "nodes/**/*.js",
-      "types/**/*.js",
-      "!lib/**/__tests__/**/*.js"
+      "src/**/*.ts",
+      "!src/**/__tests__/**/*.ts"
     ]
   }
 }

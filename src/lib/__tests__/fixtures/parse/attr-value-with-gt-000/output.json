@@ -1,0 +1,14 @@
+[
+  {
+    "type": 1,
+    "tagName": "view",
+    "attrs": {
+      "id": ">"
+    },
+    "childNodes": []
+  },
+  {
+    "type": 3,
+    "textContent": "\n"
+  }
+]

@@ -1,0 +1,11 @@
+[
+  {
+    "type": 1,
+    "tagName": "tag",
+    "attrs": {
+      "attr1": "value1",
+      "attr2": "value1"
+    },
+    "childNodes": []
+  }
+]

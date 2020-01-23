@@ -1,0 +1,15 @@
+[
+  {
+    "type": 1,
+    "tagName": "view",
+    "attrs": {
+      "hidden": true,
+      "disabled": true
+    },
+    "childNodes": []
+  },
+  {
+    "type": 3,
+    "textContent": "\n"
+  }
+]

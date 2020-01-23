@@ -1,0 +1,11 @@
+[
+  {
+    "type": 1,
+    "tagName": "tag",
+    "attrs": {
+      "name": true
+    },
+    "selfClosing": true,
+    "childNodes": []
+  }
+]

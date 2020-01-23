@@ -1,0 +1,13 @@
+[
+  {
+    "type": 1,
+    "tagName": "tag",
+    "attrs": {},
+    "childNodes": [
+      {
+        "type": 3,
+        "text": "\n"
+      }
+    ]
+  }
+]

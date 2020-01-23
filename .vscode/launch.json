@@ -10,7 +10,7 @@
       "name": "parse",
       "skipFiles": ["<node_internals>/**"],
       "program": "${workspaceFolder}/node_modules/.bin/jest",
-      "args": ["lib/__tests__/parse.test.js"],
+      "args": ["parse"],
       "console": "integratedTerminal",
       "disableOptimisticBPs": true
     }

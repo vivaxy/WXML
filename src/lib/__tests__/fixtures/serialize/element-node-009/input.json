@@ -1,0 +1,24 @@
+[
+  {
+    "type": 1,
+    "tagName": "tag",
+    "attrs": {},
+    "childNodes": [
+      {
+        "type": 3,
+        "text": "\n  "
+      },
+      {
+        "type": 1,
+        "tagName": "tag2",
+        "selfClosing": true,
+        "attrs": {},
+        "childNodes": []
+      },
+      {
+        "type": 3,
+        "text": "\n"
+      }
+    ]
+  }
+]

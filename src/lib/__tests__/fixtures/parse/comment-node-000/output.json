@@ -1,0 +1,25 @@
+[
+  {
+    "type": 8,
+    "comment": " <this is=\"a comment\" "
+  },
+  {
+    "type": 3,
+    "textContent": "\n"
+  },
+  {
+    "type": 1,
+    "tagName": "text",
+    "attrs": {},
+    "childNodes": [
+      {
+        "type": 3,
+        "textContent": "test"
+      }
+    ]
+  },
+  {
+    "type": 3,
+    "textContent": "\n"
+  }
+]
