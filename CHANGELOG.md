@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.0.0](https://github.com/vivaxy/WXML/compare/v1.0.0...v2.0.0) (2020-01-23)
+
+
+### ⚠ BREAKING CHANGES
+
+* **element-node:** rename `attrs` to `attributes`; rename `text` to `textContent`; rename node type from string to number; enforce `attributes`, `childNodes` and `selfClosing` attributes exists on json object
+
+* **element-node:** :recycle: rename `attrs` to `attributes` ([d7e5781](https://github.com/vivaxy/WXML/commit/d7e5781))
+
 ## [1.0.0](https://github.com/vivaxy/WXML/compare/v0.2.3...v1.0.0) (2019-12-15)
 
 ### [0.2.3](https://github.com/vivaxy/WXML/compare/v0.2.2...v0.2.3) (2019-08-16)
