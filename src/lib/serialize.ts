@@ -17,12 +17,12 @@ const serializeByType = {
   },
   [NODE_TYPES.ELEMENT](node: ElementNode) {
     const tagName = node.tagName || '';
-    let attrsString = Object.keys(node.attrs)
+    let attrsString = Object.keys(node.attributes)
       .map((name) => {
-        if (node.attrs[name] === true) {
+        if (node.attributes[name] === true) {
           return name;
         }
-        return `${name}="${node.attrs[name]}"`;
+        return `${name}="${node.attributes[name]}"`;
       })
       .join(' ');
     if (attrsString) {

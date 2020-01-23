@@ -2,10 +2,11 @@
   {
     "type": 1,
     "tagName": "tag",
-    "attrs": {
+    "attributes": {
       "attr1": "value1",
       "attr2": "value1"
     },
+    "selfClosing": false,
     "childNodes": []
   }
 ]

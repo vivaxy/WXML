@@ -34,7 +34,7 @@ export default function parse(input: string) {
     },
     [TYPES.TAG_CLOSE](closing: boolean, selfClosing: boolean) {
       if (attributeName) {
-        (node as ElementNode).attrs[attributeName] = true;
+        (node as ElementNode).attributes[attributeName] = true;
         attributeName = '';
       }
       if (closing && selfClosing) {
@@ -60,13 +60,13 @@ export default function parse(input: string) {
     },
     [TYPES.ATTRIBUTE_NAME](attrName: string) {
       if (attributeName) {
-        (node as ElementNode).attrs[attributeName] = true;
+        (node as ElementNode).attributes[attributeName] = true;
         attributeName = '';
       }
       attributeName = attrName;
     },
     [TYPES.ATTRIBUTE_VALUE](attrValue: string) {
-      (node as ElementNode).attrs[attributeName] = attrValue;
+      (node as ElementNode).attributes[attributeName] = attrValue;
       attributeName = '';
     },
     [TYPES.COMMENT](comment: string) {

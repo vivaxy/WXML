@@ -1,6 +1,9 @@
 [
   {
-    "type": "element",
-    "tagName": "tag"
+    "type": 1,
+    "tagName": "tag",
+    "attributes": {},
+    "selfClosing": false,
+    "childNodes": []
   }
 ]

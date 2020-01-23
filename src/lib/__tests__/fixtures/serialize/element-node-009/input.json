@@ -2,22 +2,22 @@
   {
     "type": 1,
     "tagName": "tag",
-    "attrs": {},
+    "attributes": {},
     "childNodes": [
       {
         "type": 3,
-        "text": "\n  "
+        "textContent": "\n  "
       },
       {
         "type": 1,
         "tagName": "tag2",
         "selfClosing": true,
-        "attrs": {},
+        "attributes": {},
         "childNodes": []
       },
       {
         "type": 3,
-        "text": "\n"
+        "textContent": "\n"
       }
     ]
   }

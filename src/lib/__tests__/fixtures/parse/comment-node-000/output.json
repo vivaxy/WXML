@@ -10,7 +10,8 @@
   {
     "type": 1,
     "tagName": "text",
-    "attrs": {},
+    "attributes": {},
+    "selfClosing": false,
     "childNodes": [
       {
         "type": 3,

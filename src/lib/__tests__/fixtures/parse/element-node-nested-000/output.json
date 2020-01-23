@@ -1,40 +1,44 @@
 [
   {
-    "type": "element",
+    "type": 1,
     "tagName": "view",
-    "attrs": {
+    "attributes": {
       "class": "view-class {{someClass}}"
     },
+    "selfClosing": false,
     "childNodes": [
       {
-        "type": "text",
-        "text": "\n  "
+        "type": 3,
+        "textContent": "\n  "
       },
       {
-        "type": "element",
+        "type": 1,
         "tagName": "text",
+        "attributes": {},
+        "selfClosing": false,
         "childNodes": [
           {
-            "type": "text",
-            "text": "{{a <= b ? c : d}}"
+            "type": 3,
+            "textContent": "{{a <= b ? c : d}}"
           }
         ]
       },
       {
-        "type": "text",
-        "text": "\n  "
+        "type": 3,
+        "textContent": "\n  "
       },
       {
-        "type": "element",
+        "type": 1,
         "tagName": "include",
-        "attrs": {
+        "attributes": {
           "src": "../some-template.wxml"
         },
-        "selfClosing": true
+        "selfClosing": true,
+        "childNodes": []
       },
       {
-        "type": "text",
-        "text": "\n"
+        "type": 3,
+        "textContent": "\n"
       }
     ]
   }

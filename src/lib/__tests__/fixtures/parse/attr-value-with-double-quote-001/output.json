@@ -2,9 +2,10 @@
   {
     "type": 1,
     "tagName": "tag",
-    "attrs": {
+    "attributes": {
       "name": "\""
     },
+    "selfClosing": false,
     "childNodes": []
   }
 ]

@@ -2,10 +2,11 @@
   {
     "type": 1,
     "tagName": "view",
-    "attrs": {
+    "attributes": {
       "hidden": true,
       "disabled": true
     },
+    "selfClosing": false,
     "childNodes": []
   },
   {

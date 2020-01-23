@@ -3,7 +3,7 @@
     "type": 1,
     "tagName": "tag",
     "selfClosing": true,
-    "attrs": {},
+    "attributes": {},
     "childNodes": []
   }
 ]

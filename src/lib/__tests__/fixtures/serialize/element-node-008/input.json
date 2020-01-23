@@ -2,11 +2,11 @@
   {
     "type": 1,
     "tagName": "tag",
-    "attrs": {},
+    "attributes": {},
     "childNodes": [
       {
         "type": 3,
-        "text": "\n"
+        "textContent": "\n"
       }
     ]
   }

@@ -1,6 +1,6 @@
 [
   {
-    "type": "text",
-    "text": "{a}\n"
+    "type": 3,
+    "textContent": "{a}\n"
   }
 ]

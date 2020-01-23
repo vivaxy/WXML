@@ -9,7 +9,7 @@ import NODE_TYPES from '../types/node-types';
 
 export default class ElementNode extends BaseNode {
   public tagName: string;
-  public attrs: {
+  public attributes: {
     [attrName: string]: string | true;
   };
   public childNodes: Array<ElementNode | TextNode | CommentNode>;
@@ -18,17 +18,20 @@ export default class ElementNode extends BaseNode {
   constructor() {
     super(NODE_TYPES.ELEMENT);
     this.tagName = '';
-    this.attrs = {};
+    this.attributes = {};
     this.childNodes = [];
     this.selfClosing = false;
   }
 
-  toJSON() {
+  toJSON(): Object {
     return {
       type: this.type,
       tagName: this.tagName,
-      attrs: this.attrs,
-      childNodes: this.childNodes,
+      attributes: this.attributes,
+      selfClosing: this.selfClosing,
+      childNodes: this.childNodes.map(function (node) {
+        return node.toJSON();
+      }),
     };
   }
 }

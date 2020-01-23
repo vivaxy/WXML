@@ -1,10 +1,10 @@
 [
   {
-    "type": "comment",
+    "type": 8,
     "comment": " <this is=\"a comment\" -- "
   },
   {
-    "type": "text",
-    "text": "\n"
+    "type": 3,
+    "textContent": "\n"
   }
 ]
