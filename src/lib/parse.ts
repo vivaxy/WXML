@@ -48,7 +48,6 @@ export default function parse(input: string) {
         return;
       }
       if (closing) {
-        ensureNoNode();
         node = parent as typeof node;
         parent = node!.parentNode as typeof parent;
         return;
@@ -82,12 +81,6 @@ export default function parse(input: string) {
 
   function throwError(message: string) {
     throw new Error(message);
-  }
-
-  function ensureNoNode() {
-    if (node) {
-      throwError('Unexpected node');
-    }
   }
 
   function ensureValidNode() {

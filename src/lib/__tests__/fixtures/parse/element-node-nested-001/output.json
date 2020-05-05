@@ -1,0 +1,34 @@
+[
+  {
+    "type": 1,
+    "tagName": "navigator",
+    "attributes": {},
+    "selfClosing": false,
+    "childNodes": [
+      {
+        "type": 3,
+        "textContent": "\n  "
+      },
+      {
+        "type": 1,
+        "tagName": "primary-button",
+        "attributes": {},
+        "selfClosing": false,
+        "childNodes": [
+          {
+            "type": 3,
+            "textContent": "立即体验"
+          }
+        ]
+      },
+      {
+        "type": 3,
+        "textContent": "\n"
+      }
+    ]
+  },
+  {
+    "type": 3,
+    "textContent": "\n"
+  }
+]
