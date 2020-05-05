@@ -48,7 +48,7 @@ export default function parse(input: string) {
         return;
       }
       if (closing) {
-        ensureNoNode();
+        // ensureNoNode();
         node = parent as typeof node;
         parent = node!.parentNode as typeof parent;
         return;
