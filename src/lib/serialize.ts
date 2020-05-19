@@ -9,13 +9,13 @@ import ElementNode from '../nodes/element';
 import NODE_TYPES from '../types/node-types';
 
 const serializeByType = {
-  [NODE_TYPES.TEXT](node: TextNode) {
+  [NODE_TYPES.TEXT](node: TextNode): string {
     return node.textContent;
   },
-  [NODE_TYPES.COMMENT](node: CommentNode) {
+  [NODE_TYPES.COMMENT](node: CommentNode): string {
     return `<!--${node.comment}-->`;
   },
-  [NODE_TYPES.ELEMENT](node: ElementNode) {
+  [NODE_TYPES.ELEMENT](node: ElementNode): string {
     const tagName = node.tagName || '';
     let attrsString = Object.keys(node.attributes)
       .map((name) => {
