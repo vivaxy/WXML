@@ -4,8 +4,7 @@
  */
 import NODE_TYPES from '../types/node-types';
 
-export default class BaseNode {
-
+export default abstract class BaseNode {
   public type: NODE_TYPES;
   public parentNode: BaseNode | null;
 
@@ -14,7 +13,5 @@ export default class BaseNode {
     this.parentNode = null;
   }
 
-  toJSON() {
-    throw new Error('To be implemented');
-  }
-};
+  abstract toJSON(): Object;
+}
