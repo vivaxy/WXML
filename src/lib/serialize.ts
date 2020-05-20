@@ -22,7 +22,7 @@ const serializeByType = {
         if (node.attributes[name] === true) {
           return name;
         }
-        return `${name}="${node.attributes[name]}"`;
+        return `${name}=${JSON.stringify(node.attributes[name])}`;
       })
       .join(' ');
     if (attrsString) {
