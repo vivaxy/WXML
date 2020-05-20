@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.1.0](https://github.com/vivaxy/WXML/compare/v2.0.3...v2.1.0) (2020-05-20)
+
+
+### Features
+
+* **index:** :sparkles: exports NODE_TYPES enum ([98b4805](https://github.com/vivaxy/WXML/commit/98b4805f79bc1bb2871951a7ab3939f020da9466))
+
 ### [2.0.3](https://github.com/vivaxy/WXML/compare/v2.0.2...v2.0.3) (2020-05-20)
 
 
