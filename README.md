@@ -19,7 +19,22 @@
 import * as wxml from '@vivaxy/wxml';
 const parsed = wxml.parse('<view></view>');
 wxml.traverse(parsed, function visitor(node, parent) {
-  console.log(node);
+  const type = node.type;
+  const parentNode = node.parentNode;
+
+  if (type === wxml.NODE_TYPES.ELEMENT) {
+    // handle element node
+    const tagName = node.tagName;
+    const attributes = node.attributes; // an object represents the attributes
+    const childNodes = node.childNodes;
+    const selfClosing = node.selfClosing; // if a node is self closing, like `<tag />`
+  } else if (type === wxml.NODE_TYPES.TEXT) {
+    // handle text node
+    const textContent = node.textContent;
+  } else if (type === wxml.NODE_TYPES.COMMENT) {
+    // handle comment node
+    const comment = node.comment;
+  }
 });
 const serialized = wxml.serialize(parsed);
 ```

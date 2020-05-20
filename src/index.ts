@@ -5,8 +5,9 @@
 import parse from './lib/parse';
 import _traverse from './lib/traverse';
 import _serialize from './lib/serialize';
+import NODE_TYPES from './types/node-types';
 
-export { parse };
+export { parse, NODE_TYPES };
 // @ts-ignore
 export function serialize(node) {
   if (Array.isArray(node)) {
@@ -17,7 +18,7 @@ export function serialize(node) {
       .join('');
   }
   return _serialize(node);
-};
+}
 
 //@ts-ignore
 export function traverse(node, visitor: Function) {
@@ -28,4 +29,4 @@ export function traverse(node, visitor: Function) {
   } else {
     _traverse(node, visitor);
   }
-};
+}
