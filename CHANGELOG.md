@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.0.3](https://github.com/vivaxy/WXML/compare/v2.0.2...v2.0.3) (2020-05-20)
+
+
+### Bug Fixes
+
+* **serialize:** :bug: fix the wrong result when serializing double quotes in attributes ([cc29f0f](https://github.com/vivaxy/WXML/commit/cc29f0f5da234530ee10ed073fa6036624e603df))
+
 ### [2.0.2](https://github.com/vivaxy/WXML/compare/v2.0.1...v2.0.2) (2020-05-19)
 
 
