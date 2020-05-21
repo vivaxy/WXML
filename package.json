@@ -30,7 +30,8 @@
     "test": "jest",
     "coverage": "jest --collect-coverage",
     "release:beta": "npm run build && npm run coverage && standard-version --prerelease beta && npm publish --tag beta && git push --follow-tags",
-    "release": "npm run build && npm run coverage && standard-version && npm publish && git push --follow-tags"
+    "release": "npm run build && npm run coverage && standard-version && npm publish && git push --follow-tags",
+    "postinstall":"npm run build"
   },
   "repository": {
     "type": "git",
