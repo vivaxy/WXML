@@ -8,6 +8,7 @@
 [![MIT License][license-image]][license-url]
 [![Standard Version][standard-version-image]][standard-version-url]
 [![Codecov][codecov-image]][codecov-url]
+[![DOI](https://zenodo.org/badge/143952530.svg)](https://zenodo.org/badge/latestdoi/143952530)
 
 # Install
 
